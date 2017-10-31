@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Суворов](https://up.htmlacademy.ru/htmlcss/19/user/515957).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/19/user/70260).
 
 ---
 
