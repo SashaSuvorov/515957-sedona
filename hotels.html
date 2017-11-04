@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск гостиницы в Седоне, информация, цены, фотогалерея и туры в отель</title>
+  </head>
+  <body>
+   
+    <!-- Хедер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
+    <header class="main-header">
+      <nav class="main-navigation">
+        <!-- ТЗ 3.16. Логотип — это ссылка на главную страницу.-->
+        <a class="main-header-logo" href="index.html">
+          <img src="http://placehold.it/100x100" alt="Логотип Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Мейн пошел! -->
+    <main class="container">
+      <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+      
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <!-- Здесь будет форма -->
+      </section>
+      
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка гостиниц</h2>
+        <!-- может имеет смысл сортировку оформить как список? -->
+        <p>
+          <span class="sorting-found">Найдено: 3</span>
+          <span class="sorting-text">Сортировка:</span>
+          <a class="sorting-link" href="#">По цене</a>
+          <a class="sorting-link" href="#">По типу</a>
+          <a class="sorting-link" href="#">По рейтингу</a>       
+        </p>
+        <!-- здесь элемент навигации? Сначала окуклил в p, потом изменил на div -->
+        <div class="sorting-results-up-down">
+          <a href="#" class="arrow icon-up-dir"></a>
+          <a href="#" class="arrow--current icon-down-dir"></a>
+        </div>		
+      </section>
+      
+      <section class="catalog">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="catalog-list">
+          
+          <!-- Первый результат поиска -->
+          <li class="catalog-item">
+            <h3>Amara Resort &#38; Spa</h3>
+            <p>
+              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
+            </p>
+            <p>
+              <span class="catalog-category">Гостиница</span>
+              <span class="catalog-item-price">от 3500</span>
+            </p>
+            <p>
+              <a class="learn-more" href="#">Подробнее</a>
+              <a class="reservation" href="#">Забронировать</a>
+            </p>
+            <p>
+             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой -->
+              <img src="http://placehold.it/100x20" alt="Stars">
+              <span class="rating">Рейтинг: 8,5</span>
+            </p>    
+          </li>
+          
+          <!-- Второй результат поиска -->
+          <li class="catalog-item">
+            <h3>Desert Quail Inn</h3>
+            <p>
+              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
+            </p>
+            <p>
+              <span class="catalog-category">Мотель</span>
+              <span class="catalog-item-price">от 2000</span>
+            </p>
+            <p>
+              <a class="learn-more" href="#">Подробнее</a>
+              <a class="reservation" href="#">Забронировать</a>
+            </p>
+            <p>
+             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой... -->
+              <img src="http://placehold.it/100x20" alt="Stars">
+              <span class="rating">Рейтинг: 8,9</span>
+            </p>    
+          </li>
+          
+          <!-- Третий результат поиска -->
+          <li class="catalog-item">
+            <h3>Villas at Poco Diablo</h3>
+            <p>
+              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
+            </p>
+            <p>
+              <span class="catalog-category">Мотель</span>
+              <span class="catalog-item-price">от 2000</span>
+            </p>
+            <p>
+              <a class="learn-more" href="#">Подробнее</a>
+              <a class="reservation" href="#">Забронировать</a>
+            </p>
+            <p>
+             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой... -->
+              <img src="http://placehold.it/100x20" alt="Stars">
+              <span class="rating">Рейтинг: 8,9</span>
+            </p>    
+          </li>
+           
+        </ul>
+      </section> 
+    </main>
+  
+    <!-- Футер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
+    <footer class="main-footer">
+      <!-- подправил ссылку на хештег -->
+      <p>
+        <a class="footer-hashtag" href="#">#visitsedona</a>
+      </p>
+      <p class="footer-social-network">
+        <a class="button-twitter" href="#"></a>
+        <a class="button-facebook" href="#"></a>
+        <a class="button-youtube" href="#"></a>
+      </p>
+      <section class="footer-copyright">
+        <p>Website by</p>
+        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"><img src="http://placehold.it/100x100" alt="Логотип htmlacademy"/></a>
+      </section>
+    </footer>
+
+  </body>
+</html>
