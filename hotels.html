@@ -5,7 +5,8 @@
     <title>Поиск гостиницы в Седоне, информация, цены, фотогалерея и туры в отель</title>
   </head>
   <body>
-   
+  <div class="container">
+
     <!-- Хедер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
     <header class="main-header">
       <nav class="main-navigation">
@@ -13,129 +14,170 @@
         <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/100x100" alt="Логотип Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+        <ul class="navigation">
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Информация</a></li>
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Фото и видео</a></li>
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Карта штата</a></li>
+          <li class="navigation-item active"><a сlass="navigation-link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    
+
     <!-- Мейн пошел! -->
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
-      
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <!-- Здесь будет форма -->
       </section>
-      
+
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
-        <!-- может имеет смысл сортировку оформить как список? -->
-        <p>
-          <span class="sorting-found">Найдено: 3</span>
-          <span class="sorting-text">Сортировка:</span>
-          <a class="sorting-link" href="#">По цене</a>
-          <a class="sorting-link" href="#">По типу</a>
-          <a class="sorting-link" href="#">По рейтингу</a>       
-        </p>
-        <!-- здесь элемент навигации? Сначала окуклил в p, потом изменил на div -->
-        <div class="sorting-results-up-down">
-          <a href="#" class="arrow icon-up-dir"></a>
-          <a href="#" class="arrow--current icon-down-dir"></a>
-        </div>		
+        <span class="sorting-found">Найдено: 3</span>
+        <ul class="sorting-navigation">
+          <li class="sorting-text"><span>Сортировка:</span></li>
+          <li class="sorting-item active"><a class="sorting-link" href="#">По цене</a></li>
+          <li class="sorting-item"><a class="sorting-link" href="#">По типу</a></li>
+          <li class="sorting-item"><a class="sorting-link" href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="sorting-up-down">
+          <li class="sorting-arrow"><a class="sorting-arrow-up" href="#"></a></li>
+          <li class="sorting-arrow active"><a class="sorting-arrow-down" href="#"></a></li>
+        </ul>
       </section>
-      
+
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-list">
-          
+
           <!-- Первый результат поиска -->
           <li class="catalog-item">
-            <h3>Amara Resort &#38; Spa</h3>
-            <p>
-              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
-            </p>
-            <p>
-              <span class="catalog-category">Гостиница</span>
-              <span class="catalog-item-price">от 3500</span>
-            </p>
-            <p>
-              <a class="learn-more" href="#">Подробнее</a>
-              <a class="reservation" href="#">Забронировать</a>
-            </p>
-            <p>
-             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой -->
-              <img src="http://placehold.it/100x20" alt="Stars">
-              <span class="rating">Рейтинг: 8,5</span>
-            </p>    
+            <div class="catalog-container">
+              <div class="catalog-img">
+                <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
+              </div>
+              <div class="catalog-data">
+                <div class="catalog-name">
+                  <h3 class="catalog-name-head">
+                    <a сlass="catalog-link" href="#">Amara Resort &#38; Spa</a>
+                  </h3>
+                </div>
+                <div class="catalog-about-order">
+                  <div class="catalog-about">
+                    <span class="catalog-category">Гостиница</span>
+                    <a class="catalog-more" href="#">Подробнее</a>
+                  </div>
+                  <div class="catalog-order">
+                    <span class="catalog-category catalog-category-price">от 3500</span>
+                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-mark">
+                <!-- Здесь потом будут звезды -->
+                <span class="catalog-stars"></span>
+                <div class="catalog-rating">
+                  <span class="catalog-grade">Рейтинг: 8,5</span>
+                </div>
+              </div>
+            </div>
           </li>
-          
+
           <!-- Второй результат поиска -->
           <li class="catalog-item">
-            <h3>Desert Quail Inn</h3>
-            <p>
-              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
-            </p>
-            <p>
-              <span class="catalog-category">Мотель</span>
-              <span class="catalog-item-price">от 2000</span>
-            </p>
-            <p>
-              <a class="learn-more" href="#">Подробнее</a>
-              <a class="reservation" href="#">Забронировать</a>
-            </p>
-            <p>
-             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой... -->
-              <img src="http://placehold.it/100x20" alt="Stars">
-              <span class="rating">Рейтинг: 8,9</span>
-            </p>    
+            <div class="catalog-container">
+              <div class="catalog-img">
+                <img src="http://placehold.it/100x100" alt="Картинка Desert Quail Inn">
+              </div>
+              <div class="catalog-data">
+                <div class="catalog-name">
+                  <h3 class="catalog-name-head">
+                    <a сlass="catalog-link" href="#">Desert Quail Inn</a>
+                  </h3>
+                </div>
+                <div class="catalog-about-order">
+                  <div class="catalog-about">
+                    <span class="catalog-category">Мотель</span>
+                    <a class="catalog-more" href="#">Подробнее</a>
+                  </div>
+                  <div class="catalog-order">
+                    <span class="catalog-category catalog-category-price">от 2000</span>
+                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-mark">
+                <!-- Здесь потом будут звезды -->
+                <span class="catalog-stars"></span>
+                <div class="catalog-rating">
+                  <span class="catalog-grade">Рейтинг: 8,9</span>
+                </div>
+              </div>
+            </div>
           </li>
-          
+
           <!-- Третий результат поиска -->
           <li class="catalog-item">
-            <h3>Villas at Poco Diablo</h3>
-            <p>
-              <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
-            </p>
-            <p>
-              <span class="catalog-category">Мотель</span>
-              <span class="catalog-item-price">от 2000</span>
-            </p>
-            <p>
-              <a class="learn-more" href="#">Подробнее</a>
-              <a class="reservation" href="#">Забронировать</a>
-            </p>
-            <p>
-             <!-- как оформить звездность? Элемент не декоративный, несет в себе очень важную информацию. Сделал картинкой... -->
-              <img src="http://placehold.it/100x20" alt="Stars">
-              <span class="rating">Рейтинг: 8,9</span>
-            </p>    
+            <div class="catalog-container">
+              <div class="catalog-img">
+                <img src="http://placehold.it/100x100" alt="Картинка Villas at Poco Diablo">
+              </div>
+              <div class="catalog-data">
+                <div class="catalog-name">
+                  <h3 class="catalog-name-head">
+                    <a сlass="catalog-link" href="#">Villas at Poco Diablo</a>
+                  </h3>
+                </div>
+                <div class="catalog-about-order">
+                  <div class="catalog-about">
+                    <span class="catalog-category">Апартаменты</span>
+                    <a class="catalog-more" href="#">Подробнее</a>
+                  </div>
+                  <div class="catalog-order">
+                    <span class="catalog-category catalog-category-price">от 4000</span>
+                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-mark">
+                <!-- Здесь потом будут звезды -->
+                <span class="catalog-stars"></span>
+                <div class="catalog-rating">
+                  <span class="catalog-grade">Рейтинг: 8,9</span>
+                </div>
+              </div>
+            </div>
           </li>
-           
         </ul>
-      </section> 
+      </section>
     </main>
-  
+
     <!-- Футер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
     <footer class="main-footer">
-      <!-- подправил ссылку на хештег -->
+      <!-- Урок наставника. Удалил ссылку с хештега -->
       <p>
-        <a class="footer-hashtag" href="#">#visitsedona</a>
+        <a class="footer-hashtag">#visitsedona</a>
       </p>
-      <p class="footer-social-network">
-        <a class="button-twitter" href="#"></a>
-        <a class="button-facebook" href="#"></a>
-        <a class="button-youtube" href="#"></a>
+      <!-- Урок наставника. Переделал списком -->
+      <ul class="social">
+        <li class="social-item">
+          <a class="social-item-link twitter" href="#"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-item-link facebook" href="#"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-item-link youtube" href="#"></a>
+        </li>
+      </ul>
+      <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
+      <p>
+        Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
       </p>
-      <section class="footer-copyright">
-        <p>Website by</p>
-        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"><img src="http://placehold.it/100x100" alt="Логотип htmlacademy"/></a>
-      </section>
     </footer>
+  </div>
 
   </body>
 </html>

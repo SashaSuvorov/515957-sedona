@@ -5,7 +5,9 @@
     <title>Поиск гостиницы в Седоне, информация, цены, фотогалерея и туры в отель</title>
   </head>
   <body>
-   
+  <!-- Урок наставника. Добавил общий div на всю страницу -->
+  <div class="container">
+
     <!-- Хедер пошел! -->
     <header class="main-header">
       <nav class="main-navigation">
@@ -13,104 +15,140 @@
         <a class="main-header-logo">
           <img src="http://placehold.it/100x100" alt="Логотип Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+        <!--Урок наставника. Добавил классы -->
+        <ul class="navigation">
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Информация</a></li>
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Фото и видео</a></li>
+          <li class="navigation-item"><a сlass="navigation-link" href="#">Карта штата</a></li>
+          <li class="navigation-item"><a сlass="navigation-link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    
-    <!-- Мейн пошел! -->
-    <main class="container">
+
+    <!-- Мейн пошел! Удалил class="container" у main -->
+    <main>
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
       <section class="features">
         <h2 class="visually-hidden">Причины и преимущества</h2>
         <p class="features-anthem">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="features-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
+        <!-- Урок наставника. Исправлены заголовки на h3 -->
         <ul class="features-list">
-          <li class="feature-item">
-            <h2 class="">Настоящий городок</h2>
-            <span class="number">- №1 -</span>
-            <p>Cедона не аттракцион для туристов, там течет своя жизнь</p>
-              <ul class="features-sublist">
-                <!-- Значки жилья, еды и сувениров - судя по всему относятся к декоративным изображениям. 
-                 Нужно реализовать через background-image? -->
-                <li class="features-sublist-item">
-                  <img class="accommodation" src="http://placehold.it/100x100" alt="Картинка жилья">
-                  <h3 class="features-sublist-title">Жилье</h3>
-                  <p class="features-sublist-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="features-sublist-item">
-                  <img class="food" src="http://placehold.it/100x100" alt="Картинка еды">
-                  <h3 class="features-sublist-title">Еда</h3>
-                  <p class="feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="features-sublist-item">
-                  <img class="memento" src="http://placehold.it/100x100" alt="Картинка сувениров">
-                  <h3 class="features-sublist-title">Сувениры</h3>
-                  <p class="features-sublist-text">Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+
+          <!-- Причина #1 с картинкой-->
+          <li class="feature-item feature-item-img">
+            <div class="feature-container">
+              <h3 class="feature-head">Настоящий городок</h3>
+              <span class="feature-number">- №1 -</span>
+              <p class="feature-text">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="feature-container-img">
+              <img class="city" src="http://placehold.it/100x100" alt="Картинка города">
+            </div>
+
+            <ul class="features-sublist">
+              <!-- Значки жилья, еды и сувениров - судя по всему относятся к декоративным изображениям.
+              Нужно реализовать через background-image? -->
+              <li class="features-sublist-item">
+                <img class="accommodation" src="http://placehold.it/100x100" alt="Картинка жилья">
+                <h3 class="features-sublist-title">Жилье</h3>
+                <p class="features-sublist-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="features-sublist-item">
+                <img class="food" src="http://placehold.it/100x100" alt="Картинка еды">
+                <h3 class="features-sublist-title">Еда</h3>
+                <p class="features-sublist-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features-sublist-item">
+                <img class="memento" src="http://placehold.it/100x100" alt="Картинка сувениров">
+                <h3 class="features-sublist-title">Сувениры</h3>
+                <p class="features-sublist-text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
-          <li class="feature-item">
-            <h2 class="">Там есть мост дьявола</h2>
-            <span class="number">- №2 -</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+
+          <!-- Причина #2 с картинкой-->
+          <li class="feature-item feature-item-img">
+            <div class="feature-container">
+              <h3 class="feature-head">Там есть мост дьявола</h3>
+              <span class="feature-number">- №2 -</span>
+              <p class="feature-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="feature-container-img">
+              <img class="bridge" src="http://placehold.it/100x100" alt="Картинка Мост Дьявола">
+            </div>
           </li>
+
+          <!-- Причина #3 -->
           <li class="feature-item">
-            <h2 class="">Небольшая площадь</h2>
-            <span class="number">- №3 -</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <h3 class="feature-head">Небольшая площадь</h3>
+            <span class="feature-number">- №3 -</span>
+            <p class="feature-text">Все достопримечательности находятся очень близко</p>
           </li>
+
+          <!-- Причина #4 -->
           <li class="feature-item">
-            <h2 class="">Красивая дорога</h2>
-            <span class="number">- №4 -</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="feature-head">Красивая дорога</h3>
+            <span class="feature-number">- №4 -</span>
+            <p class="feature-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
+
+          <!--Причина #5 -->
           <li class="feature-item">
-            <h2 class="">Мало туристов</h2>
+            <h3 class="">Мало туристов</h3>
             <span class="number">- №5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
+
       <section class="order">
-          <h2 class="order-title">Заинтересовались?</h2>
-          <p class="order-date">
+        <h2 class="order-title">Заинтересовались?</h2>
+        <p class="order-date">
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне
-          </p>
-          <button class="order-button" type="button">Поиск гостиницы в Седоне</button>
+        </p>
+        <button class="order-button" type="button">Поиск гостиницы в Седоне</button>
+
+        <!-- Урок наставника. Форма перенесена под button и обернута div-->
+        <div class="form">
+          <form>
+          <!-- Здесь когда-нибудь будет форма -->
+          </form>
+        </div>
       </section>
-      
+
       <div class="map">
-      <!-- Здесь когда-нибудь будет карта -->
+        <!-- Здесь когда-нибудь будет карта -->
       </div>
     </main>
-    
-    <!-- Здесь когда-нибудь будет форма -->
-    <form class="form">
-    </form>
-    
-    <!-- Футер пошел! -->    
+
+    <!-- Футер пошел! -->
     <footer class="main-footer">
-      <!-- подправил ссылку на хештег -->
+      <!-- Урок наставника. Удалил ссылку с хештега -->
       <p>
-        <a class="footer-hashtag" href="#">#visitsedona</a>
+        <a class="footer-hashtag">#visitsedona</a>
       </p>
-      <p class="footer-social-network">
-        <a class="button-twitter" href="#"></a>
-        <a class="button-facebook" href="#"></a>
-        <a class="button-youtube" href="#"></a>
+      <!-- Урок наставника. Переделал списком -->
+      <ul class="social">
+        <li class="social-item">
+          <a class="social-item-link twitter" href="#"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-item-link facebook" href="#"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-item-link youtube" href="#"></a>
+        </li>
+      </ul>
+      <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
+      <p>
+        Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
       </p>
-      <section class="footer-copyright">
-        <p>Website by</p>
-        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"><img src="http://placehold.it/100x100" alt="Логотип htmlacademy"/></a>
-      </section>
     </footer>
+  </div>
 
   </body>
 </html>
