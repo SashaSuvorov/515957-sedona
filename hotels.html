@@ -5,179 +5,166 @@
     <title>Поиск гостиницы в Седоне, информация, цены, фотогалерея и туры в отель</title>
   </head>
   <body>
-  <div class="container">
+    <div class="container">
 
-    <!-- Хедер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
-    <header class="main-header">
-      <nav class="main-navigation">
-        <!-- ТЗ 3.16. Логотип — это ссылка на главную страницу.-->
-        <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/100x100" alt="Логотип Седона">
-        </a>
-        <ul class="navigation">
-          <li class="navigation-item"><a сlass="navigation-link" href="#">Информация</a></li>
-          <li class="navigation-item"><a сlass="navigation-link" href="#">Фото и видео</a></li>
-          <li class="navigation-item"><a сlass="navigation-link" href="#">Карта штата</a></li>
-          <li class="navigation-item active"><a сlass="navigation-link" href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+      <!-- Хедер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
+      <header class="main-header">
+        <nav class="main-navigation">
+          <!-- ТЗ 3.16. Логотип — это ссылка на главную страницу.-->
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/100x100" alt="Логотип Седона">
+          </a>
+          <ul class="navigation">
+            <li class="navigation-item"><a сlass="navigation-link" href="#">Информация</a></li>
+            <li class="navigation-item"><a сlass="navigation-link" href="#">Фото и видео</a></li>
+            <li class="navigation-item"><a сlass="navigation-link" href="#">Карта штата</a></li>
+            <li class="navigation-item active"><a сlass="navigation-link" href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- Мейн пошел! -->
-    <main>
-      <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+      <!-- Мейн пошел! -->
+      <main>
+        <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <!-- Здесь будет форма -->
+        </section>
+        <section class="sorting">
+          <h2 class="visually-hidden">Сортировка гостиниц</h2>
+          <span class="sorting-found">Найдено: 3</span>
+          <ul class="sorting-navigation">
+            <li class="sorting-text"><span>Сортировка:</span></li>
+            <li class="sorting-item active"><a class="sorting-link" href="#">По цене</a></li>
+            <li class="sorting-item"><a class="sorting-link" href="#">По типу</a></li>
+            <li class="sorting-item"><a class="sorting-link" href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="sorting-up-down">
+            <li class="sorting-arrow"><a class="sorting-arrow-up" href="#"></a></li>
+            <li class="sorting-arrow active"><a class="sorting-arrow-down" href="#"></a></li>
+          </ul>
+        </section>
 
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- Здесь будет форма -->
-      </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Список гостиниц</h2>
+          <ul class="catalog-list">
 
-      <section class="sorting">
-        <h2 class="visually-hidden">Сортировка гостиниц</h2>
-        <span class="sorting-found">Найдено: 3</span>
-        <ul class="sorting-navigation">
-          <li class="sorting-text"><span>Сортировка:</span></li>
-          <li class="sorting-item active"><a class="sorting-link" href="#">По цене</a></li>
-          <li class="sorting-item"><a class="sorting-link" href="#">По типу</a></li>
-          <li class="sorting-item"><a class="sorting-link" href="#">По рейтингу</a></li>
-        </ul>
-        <ul class="sorting-up-down">
-          <li class="sorting-arrow"><a class="sorting-arrow-up" href="#"></a></li>
-          <li class="sorting-arrow active"><a class="sorting-arrow-down" href="#"></a></li>
-        </ul>
-      </section>
-
-      <section class="catalog">
-        <h2 class="visually-hidden">Список гостиниц</h2>
-        <ul class="catalog-list">
-
-          <!-- Первый результат поиска -->
-          <li class="catalog-item">
-            <div class="catalog-container">
+            <!-- Первый результат поиска -->
+            <li class="catalog-item">
               <div class="catalog-img">
-                <img src="http://placehold.it/100x100" alt="Amara Resort and Spa">
+                <img src="http://placehold.it/100x100" alt="Картинка Amara Resort and Spa">
               </div>
               <div class="catalog-data">
-                <div class="catalog-name">
-                  <h3 class="catalog-name-head">
-                    <a сlass="catalog-link" href="#">Amara Resort &#38; Spa</a>
-                  </h3>
-                </div>
+                <h3 class="catalog-name">
+                  <a сlass="catalog-link" href="#">Amara Resort &#38; Spa</a>
+                </h3>
                 <div class="catalog-about-order">
                   <div class="catalog-about">
                     <span class="catalog-category">Гостиница</span>
-                    <a class="catalog-more" href="#">Подробнее</a>
+                    <a class="catalog-link" href="#">Подробнее</a>
                   </div>
                   <div class="catalog-order">
-                    <span class="catalog-category catalog-category-price">от 3500</span>
-                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                    <span class="catalog-category">от 3500</span>
+                    <a class="catalog-link bookit" href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-mark">
-                <!-- Здесь потом будут звезды -->
-                <span class="catalog-stars"></span>
-                <div class="catalog-rating">
-                  <span class="catalog-grade">Рейтинг: 8,5</span>
+                <div class="catalog-stars-img">
+                  <!-- Здесь потом будут звезды -->
+                </div>
+                <div class="catalog-rating-text">
+                  Рейтинг: 8,5
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <!-- Второй результат поиска -->
-          <li class="catalog-item">
-            <div class="catalog-container">
+            <!-- Второй результат поиска -->
+            <li class="catalog-item">
               <div class="catalog-img">
-                <img src="http://placehold.it/100x100" alt="Картинка Desert Quail Inn">
+                <img src="http://placehold.it/100x100" alt="Картинка Desert Quail Inna">
               </div>
               <div class="catalog-data">
-                <div class="catalog-name">
-                  <h3 class="catalog-name-head">
-                    <a сlass="catalog-link" href="#">Desert Quail Inn</a>
-                  </h3>
-                </div>
+                <h3 class="catalog-name">
+                  <a сlass="catalog-link" href="#">Desert Quail Inn</a>
+                </h3>
                 <div class="catalog-about-order">
                   <div class="catalog-about">
                     <span class="catalog-category">Мотель</span>
-                    <a class="catalog-more" href="#">Подробнее</a>
+                    <a class="catalog-link" href="#">Подробнее</a>
                   </div>
                   <div class="catalog-order">
-                    <span class="catalog-category catalog-category-price">от 2000</span>
-                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                    <span class="catalog-category">от 2000</span>
+                    <a class="catalog-link bookit" href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-mark">
-                <!-- Здесь потом будут звезды -->
-                <span class="catalog-stars"></span>
-                <div class="catalog-rating">
-                  <span class="catalog-grade">Рейтинг: 8,9</span>
+                <div class="catalog-stars-img">
+                  <!-- Здесь потом будут звезды -->
+                </div>
+                <div class="catalog-rating-text">
+                  Рейтинг: 8,9
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <!-- Третий результат поиска -->
-          <li class="catalog-item">
-            <div class="catalog-container">
+            <!-- Третий результат поиска -->
+            <li class="catalog-item">
               <div class="catalog-img">
                 <img src="http://placehold.it/100x100" alt="Картинка Villas at Poco Diablo">
               </div>
               <div class="catalog-data">
-                <div class="catalog-name">
-                  <h3 class="catalog-name-head">
-                    <a сlass="catalog-link" href="#">Villas at Poco Diablo</a>
-                  </h3>
-                </div>
+                <h3 class="catalog-name">
+                  <a сlass="catalog-link" href="#">Villas at Poco Diablo</a>
+                </h3>
                 <div class="catalog-about-order">
                   <div class="catalog-about">
                     <span class="catalog-category">Апартаменты</span>
-                    <a class="catalog-more" href="#">Подробнее</a>
+                    <a class="catalog-link" href="#">Подробнее</a>
                   </div>
                   <div class="catalog-order">
-                    <span class="catalog-category catalog-category-price">от 4000</span>
-                    <a class="catalog-more catalog-more-book" href="#">Забронировать</a>
+                    <span class="catalog-category">от 4000</span>
+                    <a class="catalog-link bookit" href="#">Забронировать</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-mark">
-                <!-- Здесь потом будут звезды -->
-                <span class="catalog-stars"></span>
-                <div class="catalog-rating">
-                  <span class="catalog-grade">Рейтинг: 8,9</span>
+                <div class="catalog-stars-img">
+                  <!-- Здесь потом будут звезды -->
+                </div>
+                <div class="catalog-rating-text">
+                  Рейтинг: 9,2
                 </div>
               </div>
-            </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- Футер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
+      <footer class="main-footer">
+        <p>
+          #visitsedona
+        </p>
+        <!-- Урок наставника. Переделал списком -->
+        <ul class="social">
+          <li class="social-item">
+            <a class="social-item-link twitter" href="#"></a>
+          </li>
+          <li class="social-item">
+            <a class="social-item-link facebook" href="#"></a>
+          </li>
+          <li class="social-item">
+            <a class="social-item-link youtube" href="#"></a>
           </li>
         </ul>
-      </section>
-    </main>
-
-    <!-- Футер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
-    <footer class="main-footer">
-      <!-- Урок наставника. Удалил ссылку с хештега -->
-      <p>
-        <a class="footer-hashtag">#visitsedona</a>
-      </p>
-      <!-- Урок наставника. Переделал списком -->
-      <ul class="social">
-        <li class="social-item">
-          <a class="social-item-link twitter" href="#"></a>
-        </li>
-        <li class="social-item">
-          <a class="social-item-link facebook" href="#"></a>
-        </li>
-        <li class="social-item">
-          <a class="social-item-link youtube" href="#"></a>
-        </li>
-      </ul>
-      <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
-      </p>
-    </footer>
-  </div>
-
+        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
