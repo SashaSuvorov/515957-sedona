@@ -68,7 +68,7 @@
                 <p class="feature-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
               <div class="feature-container-img">
-                <img class="bridge" src="img/canyon-devil-photo.jpg" alt="Картинка Мост Дьявола">
+                <img class="bridge" src="img/canyon-devil-photo.jpg" width="800" height="256" alt="Картинка Мост Дьявола">
               </div>
             </li>
 
@@ -97,22 +97,46 @@
 
         <section class="order">
           <h2 class="order-title">Заинтересовались?</h2>
-          <p class="order-date">
+          <p class="order-item">
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне
           </p>
           <button class="order-button" type="button">Поиск гостиницы в Седоне</button>
-          <!-- Урок наставника. Форма перенесена под button и обернута div-->
-          <div class="form">
-            <form>
-            <!-- Здесь когда-нибудь будет форма -->
+          <div class="booking">
+            <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="booking-item">
+                <label class="booking-label" for="arrival-date-field">Дата заезда:</label>
+                <input class="booking-input" type="text" name="arrival-date" id="arrival-date-field" value="24 апреля 2017">
+                <button class="booking-calendar" type="button" aria-label="выбрать дату заезда на календаре"></button>
+              </p>
+              <p class="booking-item">
+                <label class="booking-label" for="departure-date-field">Дата выезда:</label>
+                <input class="booking-input" type="text" name="departure-date" id="departure-date-field" value="4 июля 2017">
+                <button class="booking-calendar" type="button" aria-label="выбрать дату выезда на календаре"></button>
+              </p>
+              <p class="booking-item booking-amount">
+                <label class="booking-label" for="amount-adults-field">Взрослые:</label>
+                <button class="booking-icon" type="button" aria-label="уменьшить на одного взрослого">-</button>
+                <input class="booking-input" type="text" name="amount-adults" id="amount-adults-field" value="2">
+                <button class="booking-icon" type="button" aria-label="добавить одного взрослого">+</button>
+              </p>
+              <p class="booking-item booking-amount">
+                <label class="booking-label" for="amount-children-field">Дети:</label>
+                <button class="booking-icon" type="button" aria-label="уменьшить на одного ребенка">-</button>
+                <input class="booking-input" type="text" name="amount-children" id="amount-children-field" value="0">
+                <button class="booking-icon" type="button" aria-label="добавить одного ребенка">+</button>
+              </p>
+              <button class="booking-search" type="submit">Найти</button>
             </form>
           </div>
         </section>
 
-        <div class="map">
-          <!-- Здесь когда-нибудь будет карта -->
-        </div>
+        <section class="map">
+          <h2 class="visually-hidden">Седона на карте США и мира</h2>
+          <p class="map-item">
+            <img src="img/map.jpg" width="1200" height="473" alt="Подробная карта Седона с отелями, достопримечательностями на русском языке">
+          </p>
+        </section>
       </main>
 
       <!-- Футер пошел! -->
@@ -120,22 +144,20 @@
         <p class="hashtag">
           #visitsedona
         </p>
-        <!-- Урок наставника. Переделал списком -->
         <ul class="social">
           <li class="social-item">
-            <a class="social-item-link twitter" href="#"></a>
+            <a class="social-item-link twitter" aria-label="Твиттер" href="#"></a>
           </li>
           <li class="social-item">
-            <a class="social-item-link facebook" href="#"></a>
+            <a class="social-item-link facebook" aria-label="Фейсбук" href="#"></a>
           </li>
           <li class="social-item">
-            <a class="social-item-link youtube" href="#"></a>
+            <a class="social-item-link youtube" aria-label="Ютуб" href="#"></a>
           </li>
         </ul>
-        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
         <p class="copyright">
           Website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Xтмлакадемия.ру" class="academylogo"></a>
         </p>
       </footer>
     </div>

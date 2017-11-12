@@ -7,10 +7,9 @@
   <body>
     <div class="container">
 
-      <!-- Хедер пошел! ТЗ 3.17. Главное меню и футер совпадают с главной страницей. -->
+      <!-- Хедер пошел! -->
       <header class="main-header">
         <nav class="main-navigation">
-          <!-- ТЗ 3.16. Логотип — это ссылка на главную страницу.-->
           <a class="main-header-logo" href="index.html">
             <img src="img/sedona-logo.png" width="138" height="70" alt="Логотип Седона">
           </a>
@@ -26,9 +25,55 @@
       <!-- Мейн пошел! -->
       <main>
         <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
-        <section class="filters">
+        <section class="filter">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
-          <!-- Здесь будет форма -->
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-group">
+              <legend class="filter-name">Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-Wi-fi">
+                  <label for="filter-Wi-fi">Wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-name">Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-price">
+              <legend class="filter-name">Стоимость в сутки (p):</legend>
+              <div class="filter-choice">
+                <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="filter-slider">
+                <!-- Здесь будет двойной ползунок -->
+              </div>
+            </fieldset>
+            <button class="filter-btn" type="submit">Показать</button>
+          </form>
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка гостиниц</h2>
@@ -40,8 +85,8 @@
             <li class="sorting-item"><a class="sorting-link" href="#">По рейтингу</a></li>
           </ul>
           <ul class="sorting-up-down">
-            <li class="sorting-arrow"><a class="sorting-arrow-up" href="#"></a></li>
-            <li class="sorting-arrow active"><a class="sorting-arrow-down" href="#"></a></li>
+            <li class="sorting-arrow"><a class="sorting-arrow-up" href="#" aria-label="Сортировать по увеличению цены"></a></li>
+            <li class="sorting-arrow active"><a class="sorting-arrow-down" href="#" aria-label="Сортировать по уменьшению цены"></a></li>
           </ul>
         </section>
 
@@ -70,7 +115,7 @@
                 </div>
               </div>
               <div class="catalog-mark">
-                <div class="catalog-stars-img">
+                <div class="catalog-stars-img" aria-label="Гостиница четыре звезды" >
                   <!-- Здесь потом будут звезды -->
                 </div>
                 <div class="catalog-rating-text">
@@ -100,7 +145,7 @@
                 </div>
               </div>
               <div class="catalog-mark">
-                <div class="catalog-stars-img">
+                <div class="catalog-stars-img" aria-label="Мотель три звезды">
                   <!-- Здесь потом будут звезды -->
                 </div>
                 <div class="catalog-rating-text">
@@ -130,7 +175,7 @@
                 </div>
               </div>
               <div class="catalog-mark">
-                <div class="catalog-stars-img">
+                <div class="catalog-stars-img" aria-label="Апартаменты две звезды">
                   <!-- Здесь потом будут звезды -->
                 </div>
                 <div class="catalog-rating-text">
@@ -147,22 +192,20 @@
         <p class="hashtag">
           #visitsedona
         </p>
-        <!-- Урок наставника. Переделал списком -->
         <ul class="social">
           <li class="social-item">
-            <a class="social-item-link twitter" href="#"></a>
+            <a class="social-item-link twitter" aria-label="Твиттер" href="#"></a>
           </li>
           <li class="social-item">
-            <a class="social-item-link facebook" href="#"></a>
+            <a class="social-item-link facebook" aria-label="Фейсбук" href="#"></a>
           </li>
           <li class="social-item">
-            <a class="social-item-link youtube" href="#"></a>
+            <a class="social-item-link youtube" aria-label="Ютуб" href="#"></a>
           </li>
         </ul>
-        <!-- ТЗ 3.9. Логотип Академии в подвале ведёт на лендинг интенсива «Базовый HTML и CSS». -->
         <p class="copyright">
           Website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="Academylogo"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Xтмлакадемия.ру" class="academylogo"></a>
         </p>
       </footer>
     </div>
