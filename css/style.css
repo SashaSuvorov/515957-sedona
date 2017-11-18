@@ -1,0 +1,219 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  background-image: url("img/sedona.jpg");
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.navigation,
+.social,
+.features-list,
+.features-sublist {
+  list-style: none;
+}
+
+.main-navigation {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 26px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.navigation a {
+  color: rgb(0, 0, 0);
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.navigation a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.features-anthem {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.features-causes {
+  text-align: center;
+}
+
+.feature-head {
+  font-size: 21px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.feature-item {
+  text-align: center;
+  background-color: rgb(238, 238, 238)
+}
+
+.feature-item.feature-item-img {
+  background-color: rgb(255, 255, 255)
+}
+
+.feature-container {
+  background-color: rgb(129, 179, 210);
+  text-align: center;
+}
+
+.feature-container .feature-head {
+  color: rgb(255, 255, 255);
+}
+
+.order h2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.order p {
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+/* кнопка Поиск гостиницы в Седоне */
+
+.order-button {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.order-button:hover {
+  background-color: #604e43;
+}
+
+.order-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+/* форма заказа на главной */
+
+.booking-item .booking-label {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.booking-item .booking-input {
+  background-color: #f2f2f2;
+}
+
+.booking-item .booking-input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-item .booking-input:focus {
+  background-color: #ffffff;
+}
+
+/* иконки календарей */
+
+.booking-calendar .calendar-btn-icon {
+  fill: rgb(202, 202, 202);
+}
+
+.booking-calendar .calendar-btn-icon:hover {
+  fill: rgb(0, 0, 0);
+}
+
+.booking-calendar .calendar-btn-icon:active {
+  fill: rgb(129, 179, 210);
+}
+
+/* кнока Найти */
+
+.booking-search {
+  font: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.booking-search:hover {
+  background-color: #669ec0;
+}
+
+.booking-search:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+/* Футер главной */
+.main-footer .hashtag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.social .social-icon {
+  fill: #ffffff;
+ }
+
+.social .social-item {
+  background-color: #81b3d2;
+ }
+
+.social .social-item-link:hover {
+  background-color: #669ec0;
+ }
+
+.social .social-item-link:active {
+  background-color: #5496bd;
+ }
+
+.social .social-icon:active {
+  fill: rgba(255, 255, 255, 0.3);
+ }
+
+.academy-icon {
+  fill: #231f20;
+}
+
+.academy-icon:hover {
+  fill: #81b3d2;
+ }
+
+.academy-icon:active {
+  fill: #bdbbbc;
+ }
