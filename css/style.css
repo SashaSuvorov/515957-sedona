@@ -9,8 +9,8 @@ body {
   color: rgb(51, 51, 51);
   font-weight: normal;
   text-transform: uppercase;
-  background-color: rgb(242, 242, 242);
-  background-image: url("img/sedona.jpg");
+
+  background-color: #f2f2f2;
 }
 
 a {
@@ -18,8 +18,10 @@ a {
 }
 
 .container {
+  margin: 0 auto;
   width: 1200px;
-  background-color: rgb(255, 255, 255);
+
+  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -47,31 +49,31 @@ a {
 /* ---------------------------------- */
 
 .main-navigation {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
   line-height: 26px;
+  color: #000000;
+  font-weight: bold;
 
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
-.navigation a {
-  color: rgb(0, 0, 0);
+.navigation-link {
+  color: #000000;
 }
 
-.navigation a:focus,
-.navigation a:hover {
+.navigation-link:focus,
+.navigation-link:hover {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.navigation a:hover {
-  color: rgb(129, 179, 210);
+.navigation-link:hover {
+  color: #81b3d2;
 }
 
 .features-anthem {
-  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 
 .features-causes {
@@ -81,44 +83,51 @@ a {
 .feature-head {
   font-size: 21px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: #000000;
+}
+
+.features-sublist-title {
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .feature-item {
   text-align: center;
-  background-color: rgb(238, 238, 238)
+
+  background-color: #eeeeee;
 }
 
-.feature-item.feature-item-img {
-  background-color: rgb(255, 255, 255)
+.feature-item-img {
+  background-color: #ffffff;
 }
 
 .feature-container {
-  background-color: rgb(129, 179, 210);
   text-align: center;
+
+  background-color: #81b3d2;
+
 }
 
 .feature-container .feature-head {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
-.order h2 {
-  font-weight: bold;
+.order-title {
   font-size: 30px;
   line-height: 36px;
+  font-weight: bold;
   text-align: center;
 }
 
-.order p {
+.order-item {
   line-height: 24px;
-  color: #333333;
   text-align: center;
+  color: #333333;
 }
 
 /* кнопка Поиск гостиницы в Седоне */
 
 .order-button {
-  font: inherit;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -138,45 +147,48 @@ a {
 
 /* форма заказа на главной */
 
-.booking-item .booking-label {
-  font-weight: bold;
-  line-height: 26px;
+.booking-item {
+  text-align: center;
 }
 
-.booking-item .booking-input {
+.booking-label {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.booking-input {
   background-color: #f2f2f2;
 }
 
-.booking-item .booking-input:hover {
+.booking-input:hover {
   background-color: #ebebeb;
 }
 
-.booking-item .booking-input:focus {
+.booking-input:focus {
   background-color: #ffffff;
 }
 
 /* иконки календарей */
 
-.booking-calendar .calendar-btn-icon {
-  fill: rgb(202, 202, 202);
+.calendar-btn-icon {
+  fill: #cacaca;
 }
 
-.booking-calendar .calendar-btn-icon:hover {
-  fill: rgb(0, 0, 0);
+.calendar-btn-icon:hover {
+  fill: #000000;
 }
 
-.booking-calendar .calendar-btn-icon:active {
-  fill: rgb(129, 179, 210);
+.calendar-btn-icon:active {
+  fill: #81b3d2;
 }
 
 /* кнока Найти */
 
 .booking-search {
-  font: inherit;
-  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+  font-weight: bold;
 
   background-color: #81b3d2;
 }
@@ -192,29 +204,29 @@ a {
 }
 
 /* Футер главной */
-.main-footer .hashtag {
-  font-weight: bold;
+.hashtag {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
 
-.social .social-icon {
+.social-icon {
   fill: #ffffff;
  }
 
-.social .social-item {
+.social-item {
   background-color: #81b3d2;
  }
 
-.social .social-item-link:hover {
+.social-item-link:hover {
   background-color: #669ec0;
  }
 
-.social .social-item-link:active {
+.social-item-link:active {
   background-color: #5496bd;
  }
 
-.social .social-icon:active {
+.social-icon:active {
   fill: rgba(255, 255, 255, 0.3);
  }
 
@@ -230,20 +242,141 @@ a {
   fill: #bdbbbc;
  }
 
+ .copyright {
+  line-height: 26px;
+  color: #000000;
+ }
+
  /* ----------------------------------- */
  /* Стилизация для страницы hotels.html */
  /* ----------------------------------- */
 
 .filter-name {
-   font-weight: bold;
-   font-size: 16px;
-   color: #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
  }
 
 .filter {
-   background-color: #81b3d2;
+  background-color: #81b3d2;
+  background-image: url(../img/filter-background.jpg);
+}
+
+.filter-label {
+  color: #ffffff;
  }
 
-.filter-option {
-   color: #ffffff;
- }
+.filter-btn {
+  color: #ffffff;
+  background: none;
+}
+
+.price-label {
+  color: #ffffff;
+}
+
+.sorting-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba( 0, 0, 0, 0.3);
+}
+
+.sorting-link.active {
+  color: #81b3d2;
+}
+
+.sorting-link:hover {
+  color: #81b3d2;
+}
+
+.sorting-link:active {
+  color: #000000;
+}
+
+.sorting-arrow-icon.current {
+  fill: #81b3d2;
+}
+
+.sorting-arrow-icon {
+  fill: #cacaca;
+}
+
+.sorting-arrow-icon:hover {
+  fill: #231f20;
+}
+
+.sorting-arrow-icon:active {
+  fill: #81b3d2;
+}
+
+.catalog-link-name {
+  color: #000000;
+}
+
+.catalog-link-name:hover {
+  color: #81b3d2;
+}
+
+.catalog-link-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.catalog-category {
+  color: #333333;
+}
+
+.catalog-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.catalog-link {
+  background-color: #81b3d2;
+}
+
+.catalog-link:hover {
+  background-color: #669ec0;
+}
+
+.catalog-link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.catalog-link.reservation {
+  background-color: #766357;
+}
+
+.catalog-link.reservation:hover {
+  background-color: #604e43;
+}
+
+.catalog-link.reservation:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.catalog-rating-text {
+  color: #666666;
+
+  background: #f2f2f2;
+}
