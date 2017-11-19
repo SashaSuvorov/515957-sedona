@@ -1,3 +1,7 @@
+/* ----------------------------------------- */
+/* Общие элементы стилизации для всего сайта */
+/* ----------------------------------------- */
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -30,9 +34,17 @@ a {
 .navigation,
 .social,
 .features-list,
-.features-sublist {
+.features-sublist,
+.filter-option,
+.sorting-navigation,
+.sorting-up-down,
+.catalog-list {
   list-style: none;
 }
+
+/* ---------------------------------- */
+/* Стилизация для страницы index.html */
+/* ---------------------------------- */
 
 .main-navigation {
   color: rgb(0, 0, 0);
@@ -216,4 +228,22 @@ a {
 
 .academy-icon:active {
   fill: #bdbbbc;
+ }
+
+ /* ----------------------------------- */
+ /* Стилизация для страницы hotels.html */
+ /* ----------------------------------- */
+
+.filter-name {
+   font-weight: bold;
+   font-size: 16px;
+   color: #ffffff;
+ }
+
+.filter {
+   background-color: #81b3d2;
+ }
+
+.filter-option {
+   color: #ffffff;
  }
