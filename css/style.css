@@ -6,7 +6,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-weight: normal;
   text-transform: uppercase;
 
@@ -18,8 +18,8 @@ a {
 }
 
 .container {
-  margin: 0 auto;
   width: 1200px;
+  margin: 0 auto;
 
   background-color: #ffffff;
 }
@@ -83,7 +83,6 @@ a {
 .feature-head {
   font-size: 21px;
   font-weight: bold;
-  color: #000000;
 }
 
 .features-sublist-title {
@@ -105,10 +104,9 @@ a {
   text-align: center;
 
   background-color: #81b3d2;
-
 }
 
-.feature-container .feature-head {
+.feature-container-img {
   color: #ffffff;
 }
 
@@ -361,15 +359,15 @@ a {
   background-color: #5496bd;
 }
 
-.catalog-link.reservation {
+.reservation {
   background-color: #766357;
 }
 
-.catalog-link.reservation:hover {
+.reservation:hover {
   background-color: #604e43;
 }
 
-.catalog-link.reservation:active {
+.reservation:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
